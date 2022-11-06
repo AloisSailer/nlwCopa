@@ -19,25 +19,19 @@ function createCard(date, day, games) {
   `
 }
 
-document.querySelector('#app').innerHTML = `
-  <header>
-    <img src="./assets/logo.svg" alt="Logo da NLW" />
-  </header>
-  <main id="cards">
-    ${createCard(
-      '24/11',
-      'domingo',
-      createGame('brazil', '16:00', 'serbia', 'Brasil', 'Sérvia')
-    )}
-    ${createCard(
-      '28/11',
-      'segunda',
-      createGame('brazil', '13:00', 'switzerland', 'Brasil', 'Suiça')
-    )}
-    ${createCard(
-      '02/12',
-      'sexta',
-      createGame('brazil', '16:00', 'cameroon', 'Brasil', 'Camarões')
-    )}
-  </main>
-`
+document.querySelector('#cards').innerHTML =
+  createCard(
+    '24/11',
+    'domingo',
+    createGame('brazil', '16:00', 'serbia', 'Brasil', 'Sérvia')
+  ) +
+  createCard(
+    '28/11',
+    'segunda',
+    createGame('brazil', '13:00', 'switzerland', 'Brasil', 'Suiça')
+  ) +
+  createCard(
+    '02/12',
+    'sexta',
+    createGame('brazil', '16:00', 'cameroon', 'Brasil', 'Camarões')
+  )
