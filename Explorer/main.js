@@ -35,3 +35,4 @@ document.querySelector('#cards').innerHTML =
     'sexta',
     createGame('brazil', '16:00', 'cameroon', 'Brasil', 'Camarões')
   )
+  
